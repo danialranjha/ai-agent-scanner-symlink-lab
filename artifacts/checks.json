@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "faults": {
+    "eager_resolution": {
+      "tests": 1,
+      "failures": 3,
+      "errors": 0,
+      "skips": 0
+    },
+    "leaf_guard_removed": {
+      "tests": 1,
+      "failures": 3,
+      "errors": 0,
+      "skips": 0
+    }
+  }
+}

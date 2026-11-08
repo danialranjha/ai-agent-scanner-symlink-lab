@@ -1,0 +1,120 @@
+{
+  "before": {
+    "repository": "a9320/tianxi-ai-content-guard",
+    "revision": "0c81df7cc6ee3dbbed5897361da8ae62b4799704",
+    "path": "skill/scripts/entry.py",
+    "git_blob": "66552d5a620341bbc1fa83219985a2187f38ecb9",
+    "full_source_sha256": "c7150e79c2324f50dad5483d2b6042a715a4ae38b699ca827920f1b0df89aa93",
+    "excerpts": [
+      {
+        "name": "_SYSTEM_DIRS",
+        "first_line": 67,
+        "last_line": 73,
+        "sha256": "952c572170db1f3cdc6d5a16320a5419ddfa2cffbc6fcf3dcedc0ee0d268a006"
+      },
+      {
+        "name": "_SENSITIVE_PATTERNS",
+        "first_line": 76,
+        "last_line": 80,
+        "sha256": "3983549be5e2692cf7b25839ebf1059fe8b80aa0eccd44c33a46d84bdfd9b300"
+      },
+      {
+        "name": "_BINARY_SNIFF_BYTES",
+        "first_line": 92,
+        "last_line": 92,
+        "sha256": "dd831ee822de87af6b56188bdad5972a29eb61edafcda56d8780229b95c61d79"
+      },
+      {
+        "name": "_is_under",
+        "first_line": 130,
+        "last_line": 135,
+        "sha256": "98a24bf65d9870469869654854fb0054c99e5f8fba280fdedc7af9a613d58714"
+      },
+      {
+        "name": "_is_sensitive",
+        "first_line": 150,
+        "last_line": 152,
+        "sha256": "eaa43509ecb0cca6d676cca7ba5afca4a3003a5fbfd694f1ed606321f08a5052"
+      },
+      {
+        "name": "_read_file_bytes",
+        "first_line": 167,
+        "last_line": 180,
+        "sha256": "29088bfd75954cbb2dc4a7771b93c314554631efcc03f3ed5ad62b320e8dce08"
+      },
+      {
+        "name": "_guard_file",
+        "first_line": 183,
+        "last_line": 193,
+        "sha256": "0052a28cceaebe435dd0228f248ff5dc3d5a19c1905a24388e9134e4fbc5d80c"
+      }
+    ],
+    "vendor_sha256": "f3d1f8d9691f557f4748da85837b60806337556c45a242dc9d56cacf69e284be",
+    "caller_lines": [
+      746,
+      753
+    ]
+  },
+  "after": {
+    "repository": "a9320/tianxi-ai-content-guard",
+    "revision": "21c1498ddea4c1dbe8af52bb9be8d0f13e0d9d1c",
+    "path": "skill/scripts/entry.py",
+    "git_blob": "fbebbf0e8ff9f61e1571ef21150cb28f383133db",
+    "full_source_sha256": "f3cf617c45fb37a7ab246e5c1831209661c63a3a0052177240dfd74461dc432f",
+    "excerpts": [
+      {
+        "name": "_SYSTEM_DIRS",
+        "first_line": 67,
+        "last_line": 73,
+        "sha256": "952c572170db1f3cdc6d5a16320a5419ddfa2cffbc6fcf3dcedc0ee0d268a006"
+      },
+      {
+        "name": "_SENSITIVE_PATTERNS",
+        "first_line": 76,
+        "last_line": 80,
+        "sha256": "c15b4ab893b043242026cca8a32964b9779a947c44b8b980090988177cc70d1a"
+      },
+      {
+        "name": "_BINARY_SNIFF_BYTES",
+        "first_line": 94,
+        "last_line": 94,
+        "sha256": "dd831ee822de87af6b56188bdad5972a29eb61edafcda56d8780229b95c61d79"
+      },
+      {
+        "name": "_is_under",
+        "first_line": 132,
+        "last_line": 137,
+        "sha256": "98a24bf65d9870469869654854fb0054c99e5f8fba280fdedc7af9a613d58714"
+      },
+      {
+        "name": "_is_sensitive",
+        "first_line": 152,
+        "last_line": 154,
+        "sha256": "eaa43509ecb0cca6d676cca7ba5afca4a3003a5fbfd694f1ed606321f08a5052"
+      },
+      {
+        "name": "_read_file_bytes",
+        "first_line": 169,
+        "last_line": 182,
+        "sha256": "29088bfd75954cbb2dc4a7771b93c314554631efcc03f3ed5ad62b320e8dce08"
+      },
+      {
+        "name": "_guard_file",
+        "first_line": 185,
+        "last_line": 201,
+        "sha256": "c4b65dc919680037cd6f7608df2cdcdb8e5c52d56535898072489411a167111f"
+      }
+    ],
+    "vendor_sha256": "9239829ac26fbcd2639f2488bbdb66f9a86364f8e15d081a45b379c96fb23e56",
+    "caller_lines": [
+      754,
+      764
+    ]
+  },
+  "reader_limit": {
+    "value": 2097152,
+    "source": "https://github.com/a9320/tianxi-ai-content-guard/blob/21c1498ddea4c1dbe8af52bb9be8d0f13e0d9d1c/skill/scripts/engine/sanitizer.py",
+    "git_blob": "97121364ebf0d9117ec7cafd2233ef155b9df7ef",
+    "note": "MAX_FILE_BYTES assignment on line35; same Git blob at both selected revisions, verified. No engine import."
+  }
+}

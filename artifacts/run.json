@@ -1,0 +1,633 @@
+{
+  "schema": 1,
+  "scope": "selected upstream file-read boundary; no detector or model",
+  "cases": 9,
+  "modes": [
+    "before",
+    "after",
+    "after_guard_eager_caller"
+  ],
+  "rows": [
+    {
+      "case": "regular",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "regular",
+      "mode": "after",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_after_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "regular",
+      "mode": "after_guard_eager_caller",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "relative_leaf",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "relative.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "relative_leaf",
+      "mode": "after",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "relative.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "guard_input",
+          "path": "relative.txt",
+          "leaf_is_symlink": true
+        }
+      ]
+    },
+    {
+      "case": "relative_leaf",
+      "mode": "after_guard_eager_caller",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "relative.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "absolute_leaf",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "absolute.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "absolute_leaf",
+      "mode": "after",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "absolute.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "guard_input",
+          "path": "absolute.txt",
+          "leaf_is_symlink": true
+        }
+      ]
+    },
+    {
+      "case": "absolute_leaf",
+      "mode": "after_guard_eager_caller",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "absolute.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "chained_leaf",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "chain.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "chained_leaf",
+      "mode": "after",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "chain.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "guard_input",
+          "path": "chain.txt",
+          "leaf_is_symlink": true
+        }
+      ]
+    },
+    {
+      "case": "chained_leaf",
+      "mode": "after_guard_eager_caller",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "chain.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "dangling_leaf",
+      "mode": "before",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "dangling.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "absent.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "dangling_leaf",
+      "mode": "after",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "dangling.txt",
+          "leaf_is_symlink": true
+        }
+      ]
+    },
+    {
+      "case": "dangling_leaf",
+      "mode": "after_guard_eager_caller",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "dangling.txt",
+          "leaf_is_symlink": true
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "absent.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "parent_link",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "alias/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "parent_link",
+      "mode": "after",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "alias/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "alias/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_after_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "parent_link",
+      "mode": "after_guard_eager_caller",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "alias/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "data/note.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "sensitive_name",
+      "mode": "before",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": ".env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": ".env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": ".env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "sensitive_name",
+      "mode": "after",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": ".env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": ".env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "sensitive_name",
+      "mode": "after_guard_eager_caller",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": ".env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": ".env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": ".env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "secret_env",
+      "mode": "before",
+      "status": "READ",
+      "read_hex": "4e4f54452d4d41524b45520a",
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "read_input",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "secret_env",
+      "mode": "after",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "secret_env",
+      "mode": "after_guard_eager_caller",
+      "status": "GUARD_REJECTED",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "guard_input",
+          "path": "secret.env",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "missing",
+      "mode": "before",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "missing.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "missing.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "missing",
+      "mode": "after",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "missing.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    },
+    {
+      "case": "missing",
+      "mode": "after_guard_eager_caller",
+      "status": "NOT_FOUND",
+      "read_hex": null,
+      "trace": [
+        {
+          "stage": "supplied",
+          "path": "missing.txt",
+          "leaf_is_symlink": false
+        },
+        {
+          "stage": "resolve_before_guard",
+          "path": "missing.txt",
+          "leaf_is_symlink": false
+        }
+      ]
+    }
+  ]
+}
